@@ -1,0 +1,47 @@
+<DOCTYPE!>
+    <html>
+
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    </head>
+
+    <body>
+	<?php include 'login_teacher.php';?>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openCity('doanhnghiep')">Doanh Nghiệp</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('sinhvien')">Sinh Viên</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('giaovien')">Giáo Viên</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('giaovien')">Giáo Viên</button>
+			
+            <div id="doanhnghiep" class="city">
+                <!-- <h2>Doanh Nghiệp</h2> -->
+                <?php include 'login_teacher.php';?>
+            </div>
+            
+
+            <div id="sinhvien" class="city" style="display:none">
+                <!-- <h2>Sinh Vien</h2> -->
+                <!-- <p>Paris is the capital of France.</p> -->
+            </div>
+
+            <div id="giaovien" class="city" style="display:none">
+                <!-- <h2>Giáo Viên</h2> -->
+                
+                <p></p>
+            </div>
+        </div>
+        <script>
+            function openCity(cityName) {
+                var i;
+                var x = document.getElementsByClassName("city");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                document.getElementById(cityName).style.display = "block";
+            }
+        </script>
+
+    </body>
+	
+    </html>
