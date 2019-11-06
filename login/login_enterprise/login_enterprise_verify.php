@@ -3,12 +3,12 @@ include("../config.php");
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $myusername = mysqli_real_escape_string($db, $_POST['student_code']);
+    $myusername = mysqli_real_escape_string($db, $_POST['organization_name']);
 
-    $sql = "SELECT student_code FROM ho_so_nhan_su_cua_sinh_vien WHERE student_code = '$myusername'";
+    $sql = "SELECT organization_name FROM ho_so_doanh_nghiep WHERE organization_name = '$myusername'";
     $result = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
-    //$active = $row['active'];
+  //  $active = $row['active'];
 
     $count = mysqli_num_rows($result);
     if ($count == 1) {

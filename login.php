@@ -32,13 +32,13 @@
 
     <div id="GV" class="w3-container city  w3-center" style="display:none;margin-top:25px">
       <?php
-     // include "login_teacher.php";
+      include "login/login_teacher/login_teacher.php";
       ?>
     </div>
 
     <div id="DN" class="w3-container city  w3-center" style="display:none;margin-top:25px">
       <?php
-    //  include "login_Enterprise.php";
+      include "login/login_enterprise/login_enterprise.php";
       ?>
     </div>
 
