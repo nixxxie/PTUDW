@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($count == 1) {
        // session_register("myusername");
         $_SESSION['login_user'] = $myusername;
-        header("location: ../login_verify/welcome.php");
+        header("location: login_student_welcome.php");
     } else {
         header("location: ../login_verify/404.php");
     }
