@@ -5,7 +5,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $myusername = mysqli_real_escape_string($db, $_POST['organization_name']);
 
-    $sql = "SELECT organization_name FROM ho_so_doanh_nghiep WHERE organization_name = '$myusername'";
+    $sql = "SELECT organization_name FROM enterprise_profile WHERE tax_number = '$myusername'";
     $result = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
   //  $active = $row['active'];

@@ -5,7 +5,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $myusername = mysqli_real_escape_string($db, $_POST['student_code']);
 
-    $sql = "SELECT student_code FROM ho_so_nhan_su_cua_sinh_vien WHERE student_code = '$myusername'";
+    $sql = "SELECT student_code FROM student_profile WHERE student_code = '$myusername'";
     $result = mysqli_query($db, $sql);
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
     //$active = $row['active'];
