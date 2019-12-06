@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.content{
+    margin-top: 50px;
+    margin-left: 250px;
+    width:900px;
+    height:600px;
+   
+    
+}
+.enterprise{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width:270px;
+    height:250px;
+    background: write;
+    float: left;
+}

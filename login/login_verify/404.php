@@ -1,3 +1,3 @@
 <?php 
-echo "Wrong username"
+ echo "404 Not Found"
 ?>
