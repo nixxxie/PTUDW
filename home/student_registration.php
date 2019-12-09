@@ -1,7 +1,6 @@
 <?php
    include_once('../login/config.php');
    session_start();
-
    $sql = "SELECT * FROM enterprise_recruitment_request_form";
    $resultEnterPriseRequest = mysqli_query($connect, $sql);
    $followingdataEnterPriseRequest = $resultEnterPriseRequest->fetch_array(MYSQLI_ASSOC);
@@ -16,7 +15,7 @@
 ?>
 <html>
    <head>
-      <title>Welcome </title>
+      <title>Welcome</title>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
    </head>
    

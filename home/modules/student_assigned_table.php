@@ -21,9 +21,9 @@
    
    <body>
   
-      <div class='container'>
+      <div class="container">
       <form  action="xuli/student_assigned_table.php?request_id=<?php echo $followingdataEnterPriseRequest["id"] ?>" method="post" >
-         <div class="w3-panel w3-card"  style="width: 400px; display: block; height: 30%; margin-left: 300px">
+         <div class="w3-panel w3-card"  style="width: 400px; display: block; height: 30%; margin-left: 200px; border-radius: 10px;">
             <p>Subject: <?php echo $followingdataEnterPriseRequest['request_name'] ?></p>
             <p>Description: <?php echo $followingdataEnterPriseRequest['short_description'] ?></p>
             <label for='uname'><b>Start date: </b></label>
@@ -43,7 +43,7 @@
                <?php   } 
                ?>
             </select>
-            <button type='submit'> luu </button>
+            <button type='submit'> Lưu </button>
             </form>
          </div>
       </div>

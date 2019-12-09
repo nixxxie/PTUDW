@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
 <title>W3.CSS</title>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+</head>
 <body>
 
-  <div class="w3-col s4 w3-container  " style="height:250px ;width:500px;background:gray;margin-top:200px;margin-left:450px">
+  <div class="w3-container w3-khaki w3-center " style="height:250px ;width:500px;margin-top:200px; margin-left: 30%; border-radius: 20px;">
     <div class="w3-row w3-center">
       <P>LOGIN</P>
     </div>
 
     <div class="w3-row">
       <a href="javascript:void(0)" onclick="openCity(event, 'SV');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Sinh Viên</div>
+        <div class="w3-third tablink w3-bottombar w3-hover-blue-grey w3-padding">Sinh Viên</div>
       </a>
       <a href="javascript:void(0)" onclick="openCity(event, 'DN');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Doanh Nghiệp</div>
+        <div class="w3-third tablink w3-bottombar w3-hover-blue-grey w3-padding">Doanh Nghiệp</div>
       </a>
       <a href="javascript:void(0)" onclick="openCity(event, 'GV');">
-        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Giáo Viên</div>
+        <div class="w3-third tablink w3-bottombar w3-hover-blue-grey w3-padding">Giáo Viên</div>
       </a>
+      <!-- <p class="w3-center" style="padding-top: 2cm"> Chọn mục đăng nhập </p> -->
     </div>
 
     <div id="SV" class="w3-container city w3-center" style="display:none;margin-top:25px">
