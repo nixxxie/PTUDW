@@ -73,7 +73,7 @@ input[type=submit]:hover {
 <div class="container">
 <div class="w3-row w3-center">
     
-    <h3> Cap nhat Profile</h3>
+    <h3>Cập nhật hồ sơ sinh viên</h3>
     </div>
   <form action="xuli/update_student_profile.php" method="post"enctype="multipart/form-data">
   <div class="row">
@@ -105,7 +105,7 @@ input[type=submit]:hover {
  
   <div class="row">
     <div class="col-25">
-      <label for="subject">img</label>
+      <label for="subject">Ảnh đại diện</label>
     </div>
     <div class="col-75">
     <input type='file' name="uploadedFile" required />

@@ -3,7 +3,7 @@ include("../login/config.php");
 // lay list nang luc
 $sql_ablity_dictionary=mysqli_query($connect,"SELECT * from ablity_dictionary ");
 ?>
-<h3> Them nang luc</h3>
+<h3>Thêm năng lực</h3>
 
 <form action="xuli/add_capacity_student.php " method="post">
 

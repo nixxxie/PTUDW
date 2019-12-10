@@ -23,15 +23,15 @@
   
       <div class="container">
       <form  action="xuli/student_assigned_table.php?request_id=<?php echo $followingdataEnterPriseRequest["id"] ?>" method="post" >
-         <div class="w3-panel w3-card"  style="width: 400px; display: block; height: 30%; margin-left: 200px; border-radius: 10px;">
-            <p>Subject: <?php echo $followingdataEnterPriseRequest['request_name'] ?></p>
-            <p>Description: <?php echo $followingdataEnterPriseRequest['short_description'] ?></p>
-            <label for='uname'><b>Start date: </b></label>
+         <div class="w3-panel w3-card"  style="width: 350px; height: 150px;padding-top:10px; display: block; margin-left: 200px; border-radius: 10px;background-color: #9fa8a3">
+            <p>Yêu cầu: <?php echo $followingdataEnterPriseRequest['request_name'] ?></p>
+            <p>Mô tả: <?php echo $followingdataEnterPriseRequest['short_description'] ?></p>
+            <label for='uname'><b>Ngày bắt đầu: </b></label>
             <input type='date' name='start_date' value="<?php echo $followingdataDate['start_date'] ?>" required />
             <br>
-            <b><span>End date: </span></b>
+            <b><span>Ngày kết thúc: </span></b>
             <input type='date' name='end_date' value="<?php echo $followingdataDate['end_date'] ?>" required /> </br>
-            <span></b>Status:   </b> </span>
+            <span></b>Trạng thái:   </b> </span>
             <select name="status">
                <?php
                   if($followingdataDate['status'] == '0'){?>

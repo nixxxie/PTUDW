@@ -73,7 +73,7 @@ input[type=submit]:hover {
 <div class="container">
 <div class="w3-row w3-center">
     
-    <h3> Thay doi mat khau</h3>
+    <h3>Thay đổi mật khẩu</h3>
     </div>
   <form action="xuli/update_pass_student.php" method="post"enctype="multipart/form-data">
   <div class="row">
