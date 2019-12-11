@@ -9,7 +9,7 @@
 
 <body>
   <div class="wrap w3-sand">
-    <div class="w3-row w3-khaki header">
+    <div class="w3-row w3-light-green header">
       <?php include("modules/header_student.php"); ?>
     </div>
     <div class="w3-row content  w3-sand" style="margin-left: 15%; width:75%;">

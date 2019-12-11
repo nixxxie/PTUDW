@@ -23,7 +23,7 @@
   
       <div class="container">
       <form  action="xuli/student_assigned_table.php?request_id=<?php echo $followingdataEnterPriseRequest["id"] ?>" method="post" >
-         <div class="w3-panel w3-card"  style="width: 350px; height: 150px;padding-top:10px; display: block; margin-left: 200px; border-radius: 10px;background-color: #9fa8a3">
+         <div class="w3-panel w3-card"  style="width: 350px; height: 150px;padding-top:10px; margin-left: 35%; margin-top: 20%; border-radius: 10px;background-color: #9fa8a3; box-shadow: 2px 2px 2px gray;">
             <p>Yêu cầu: <?php echo $followingdataEnterPriseRequest['request_name'] ?></p>
             <p>Mô tả: <?php echo $followingdataEnterPriseRequest['short_description'] ?></p>
             <label for='uname'><b>Ngày bắt đầu: </b></label>

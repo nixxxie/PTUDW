@@ -17,6 +17,11 @@ $trang1 = ($get_trang - 1) * 6;
 $sql = mysqli_query($connect, "SELECT * from enterprise_recruitment_request_form  where statuss='3000' or statuss='4000' limit $trang1,6 ");
 
 ?>
+<style>
+a:hover{
+    color:blue;
+}
+</style>
 <?php while ($row = mysqli_fetch_assoc($sql)) {  ?>
     <div class=" w3-row enterprise w3-pale-green" style="box-shadow: 2px 2px 1px gray; border-radius: 20px;padding: 5px 5px;">
 
@@ -26,7 +31,7 @@ $sql = mysqli_query($connect, "SELECT * from enterprise_recruitment_request_form
         <p>Số lượng người đăng kí :<?php number_of_registrations($row["id"]); ?> </p>
         <p>Số lượng người đã phân công :<?php number_of_assigned($row["id"]); ?> </p>
         <p>Trạng thái : <?php check_status($row["statuss"]); ?></p>
-        <a href="layout_student.php?xem=detail_request_enerprise&id=<?php echo $row["id"]; ?>&organization_id=<?php echo $row["organization_id"]; ?> ">Chi Tiết</a>
+        <a style="text-decoration: none;" href="layout_student.php?xem=detail_request_enerprise&id=<?php echo $row["id"]; ?>&organization_id=<?php echo $row["organization_id"]; ?> ">Chi Tiết</a>
     </div>
 
 <?php

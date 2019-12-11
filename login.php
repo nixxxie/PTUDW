@@ -7,7 +7,7 @@
 </head>
 <body>
 
-  <div class="w3-container w3-khaki w3-center " style="height:250px ;width:500px;margin-top:200px; margin-left: 30%; border-radius: 20px;">
+  <div class="w3-container w3-light-green w3-center " style="height:250px ;width:500px;margin-top:15%; margin-left: 35%; border-radius: 20px;">
     <div class="w3-row w3-center">
       <P>LOGIN</P>
     </div>

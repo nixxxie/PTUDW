@@ -28,11 +28,11 @@ WHERE l.student_id=$student_id ");
 
 
   <!-- <div class="w3-row"> -->
-    <div class="w3-col s6 m6">
-      <i class="fa fa-map-marker" style="font-size:30px;color: red;margin-top: 10px"></i>
-    </div>
-    <div class="w3-col s9">
-      <p>Lớp :<?php echo $row["class_name"]; ?> </p>
+  <div class="w3-col s6 m6">
+    <i class="fa fa-map-marker" style="font-size:30px;color: red;margin-top: 10px"></i>
+  </div>
+  <div class="w3-col s9">
+    <p>Lớp :<?php echo $row["class_name"]; ?> </p>
 
     <!-- </div> -->
 
@@ -69,13 +69,13 @@ WHERE l.student_id=$student_id ");
 
     </div>
     <div class="w3-row">
-      <button class="w3-button w3-sand" style="margin-bottom: 5px;border-radius: 10px;box-shadow:1px 1px 1px gray;"> <a href="layout_student.php?xem=update_student_profile">Cập nhât thông tin</a></button>
+      <a class="w3-button w3-sand" style="margin-bottom: 5px;border-radius: 10px;box-shadow:2px 2px 1px gray;" href="layout_student.php?xem=update_student_profile">Cập nhât thông tin</a>
     </div>
     <div class="w3-row">
-      <button class="w3-button w3-sand" style="margin-bottom: 5px;border-radius: 10px;box-shadow:1px 1px 1px gray;"> <a href="layout_student.php?xem=update_pass_student">Cập nhât mật khẩu</a></button>
+      <a class="w3-button w3-sand" style="margin-bottom: 5px;border-radius: 10px;box-shadow:2px 2px 1px gray;" href="layout_student.php?xem=update_pass_student">Cập nhât mật khẩu</a>
     </div>
     <div class="w3-row">
-      <button class="w3-button w3-sand" style="margin-bottom: 5px;border-radius: 10px;box-shadow:1px 1px 1px gray;"> <a href="layout_student.php?xem=add_capacity_student">Thêm năng lực</a></button>
+      <a class="w3-button w3-sand" style="margin-bottom: 5px;border-radius: 10px;box-shadow:2px 2px 1px gray;" href="layout_student.php?xem=add_capacity_student">Thêm năng lực</a>
     </div>
 
     <?php
@@ -85,5 +85,5 @@ WHERE l.student_id=$student_id ");
     ?>
 
     <div class="w3-row">
-      <button class="w3-button w3-deep-orange" style="margin-bottom: 5px;border-radius: 10px;box-shadow:1px 1px 1px gray;"> <a href="layout_student.php?xem=list_enterprise_request">Trở về</a></button>
+      <a class="w3-button w3-deep-orange" style="margin-bottom: 5px;border-radius: 10px;box-shadow:1px 1px 1px gray;" href="layout_student.php?xem=list_enterprise_request">Trở về</a></a>
     </div>
