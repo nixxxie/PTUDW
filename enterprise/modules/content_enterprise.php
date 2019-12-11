@@ -33,9 +33,4 @@ else if($tam=='detail_request_enerprise'){
  else if($tam=='See_Student_profile'){
   include("See_Student_profile.php");
  }
- 
- 
-  
-  
-         ?>
-        
+?>
