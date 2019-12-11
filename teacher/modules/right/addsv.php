@@ -89,7 +89,7 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="fname">Mã code</label>
+          <label for="fname">Mã sinh viên</label>
         </div>
         <div class="col-25">
           <input type="text" id="fname" name="code" placeholder="">
@@ -97,7 +97,7 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="fname">Class</label>
+          <label for="fname">Lớp</label>
         </div>
         <div class="col-25">
           <input type="text" id="fname" name="class" placeholder="">
@@ -113,7 +113,7 @@
       </div>
       <div class="row">
         <div class="col-25">
-          <label for="fname">Password</label>
+          <label for="fname">Mật khẩu</label>
         </div>
         <div class="col-25">
           <input type="text" id="fname" name="Password" placeholder="">
@@ -122,7 +122,7 @@
 
       <div class="row">
         <div class="col-25">
-          <label for="subject">img</label>
+          <label for="subject">Ảnh đại diện</label>
         </div>
         <div class="col-75">
           <input type='file' name="uploadedFile" required />

@@ -70,7 +70,7 @@ input[type=submit]:hover {
 <body>
 
 
-<div class="container">
+<div class="container w3-sand">
   <form action="modules/xuli/update_pass_teacher.php" method="post"enctype="multipart/form-data">
   <div class="row">
     <div class="col-25">

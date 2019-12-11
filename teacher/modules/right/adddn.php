@@ -70,7 +70,7 @@ input[type=submit]:hover {
 <body>
 
 
-<div class="container">
+<div class="container w3-sand" >
 <form action="modules/xuli/add_enterprise.php" method="post"enctype="multipart/form-data">
   <div class="row">
     <div class="col-25">
@@ -114,7 +114,7 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="fname">Mã</label>
+      <label for="fname">Mã số thuế</label>
     </div>
     <div class="col-25">
       <input type="text" id="fname" name="code" placeholder="">
@@ -122,7 +122,7 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="fname">Password</label>
+      <label for="fname">Mật khẩu</label>
     </div>
     <div class="col-25">
       <input type="text" id="fname" name="Password" placeholder="">
@@ -130,7 +130,7 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="subject">img</label>
+      <label for="subject">Ảnh đại diện</label>
     </div>
     <div class="col-75">
     <input type='file' name='img' required />
