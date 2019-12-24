@@ -57,7 +57,7 @@ WHERE l.organization_request_id=$request_id ");
           <div class="w3-row">
           <div class="w3-col ">
 
-            <div class="w3-row">  <h3 style="margin-left:5px;">Yeu cau tuyen dung</h3></div>
+            <div class="w3-row">  <h3 style="margin-left:5px;">Yêu cầu tuyển dụng</h3></div>
 <?php while($row=mysqli_fetch_assoc($sql_ablity_dictionary)) {
 ?>
              <div class="w3-row">
@@ -70,7 +70,7 @@ WHERE l.organization_request_id=$request_id ");
 
           </div>
           <div class="w3-row">  
-              <button> <a href="layout_teacher.php?xem=list_assigned&id=<?php echo $request_id?>"  > Xem bang phan cong</a></button>
+              <a class="w3-button w3-light-green" href="layout_teacher.php?xem=list_assigned&id=<?php echo $request_id?>"  >Xem Bảng Phân Công</a>
           </div>
    
    <?php

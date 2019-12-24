@@ -1,3 +1,13 @@
+<style>
+  #chitiet:hover{
+    color: red;
+    transform: scale(1.2)
+  }
+  #xoa:hover{
+    color:brown;
+    transform: scale(1.2)
+  }
+</style>
 <?php
 include("../login/config.php");
 $request_id = $_GET["id"];
@@ -16,12 +26,12 @@ $sql_assigned_table = mysqli_query($connect, "SELECT * from assigned_table ab jo
   <?php while ($row1 = mysqli_fetch_assoc($sql_assigned_table)) { ?>
     <tr>
       <td> <?php echo $row1["name"] ?></td>
-      <td><a href="layout_teacher.php?xem=See_Student_profile&student_id=<?php echo $row1["id"] ?>"> Chi tiết </a></td>
-      <td><a href="modules/xuli/delete_student_assigned.php?student_id=<?php echo $row1["id"] ?>&request_id=<?php echo $request_id ?>"> Xóa</a></td> <?php // lam sau href="<?php echo $row1["id"] 
-                                                                                                                                                        ?>
+      <td><a id="chitiet" href="layout_teacher.php?xem=See_Student_profile&student_id=<?php echo $row1["id"] ?>"> Chi tiết </a></td>
+      <td><a id="xoa" href="modules/xuli/delete_student_assigned.php?student_id=<?php echo $row1["id"] ?>&request_id=<?php echo $request_id ?>"> Xóa</a></td> <?php // lam sau href="<?php echo $row1["id"] 
+                                                                                                                                                      ?>
     </tr>
   <?php } ?>
 </table>
 <h1> Thêm sinh viên </h1>
-<button> <a href="layout_teacher.php?xem=list_student_regster&id=<?php echo $request_id ?>"> Danh sách đăng kí</a></button>
-<button> <a href="layout_teacher.php?xem=list_student_not_assigned&id=<?php echo $request_id ?>">Chưa được phân công</a></button>
+<a class="w3-button w3-light-green" href="layout_teacher.php?xem=list_student_regster&id=<?php echo $request_id ?>"> Danh sách đăng kí</a>
+<a class="w3-button w3-light-green" href="layout_teacher.php?xem=list_student_not_assigned&id=<?php echo $request_id ?>">Chưa được phân công</a>

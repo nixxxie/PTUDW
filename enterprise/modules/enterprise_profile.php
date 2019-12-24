@@ -17,19 +17,9 @@ $row = mysqli_fetch_assoc($sql);
          <h1 class="w3-card"><?php echo $row["organization_name"]; ?></h1>
       </div>
    </div>
-
-
-
    <div class="w3-row">
-
-
       <p> Địa Chỉ: <?php echo $row["address"]; ?></p>
-
-
-
-
    </div>
-
    <div class="w3-row">
       <div class="w3-col ">
          <p>Doanh Thu: <?php echo  $row['gross_revenue']; ?></p>
@@ -37,20 +27,16 @@ $row = mysqli_fetch_assoc($sql);
    </div>
    <div class="w3-row">
       <p>Số lượng nhân viên : <?php echo  $row['employee_count']; ?></p>
-
    </div>
    <div class="w3-row">
       <p>Mô tả: <?php echo  $row['Description']; ?></p>
-
    </div>
-
    <div class="w3-row">
       <a class="w3-button w3-light-green" href="layout_enterprise.php?xem=update_enterprise_profile" style="width: 200px; margin:10px 0px;border-radius: 5px; box-shadow: 2px 2px 2px gray; ">Cập nhât thông tin</a></>
    </div>
    <div class="w3-row">
       <a class="w3-button w3-light-green" href="layout_enterprise.php?xem=update_pass_enterprise" style="width: 200px; margin:10px 0px;border-radius: 5px; box-shadow: 2px 2px 2px gray; ">Cập nhât mật khẩu</a></button>
    </div>
-
 </div>
 <div class="w3-row">
    <a class="w3-button w3-red" href="layout_enterprise.php?xem=list_request_enterprise">Trở về</a></button>

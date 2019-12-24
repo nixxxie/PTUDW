@@ -2,6 +2,17 @@
 <style>
   a {
     text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  h3 {
+    font-size: 20px;
+
+  }
+
+  h3:hover {
+    transform: scale(1.2);
+    color: lightcoral;
   }
 </style>
 <div class="w3-light-green w3-container w3-twothird">

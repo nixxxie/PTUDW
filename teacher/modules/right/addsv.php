@@ -82,6 +82,7 @@
       <div class="row">
         <div class="col-25">
           <label for="fname">Tên Sinh Viên</label>
+
         </div>
         <div class="col-25">
           <input type="text" id="fname" name="namesv" placeholder="">
@@ -128,11 +129,6 @@
           <input type='file' name="uploadedFile" required />
         </div>
       </div>
-
-
-
-
-
       <div class="row">
         <input type="submit" value="Submit">
       </div>

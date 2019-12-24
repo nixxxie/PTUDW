@@ -1,43 +1,69 @@
 <style>
-  a{
+  a {
     text-decoration: none;
+  }
+
+  #content:hover {
+    background-color: lightgray !important;
+    width: 223px;
+    transform: scale(1.1);
+    font-weight: bold;
+    color: purple;
+    border-radius: 10px;
+  }
+
+  a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
   }
 </style>
 <div class="w3-row">
-  <div class="w3-light-gray w3-container w3-quarter left" style="width: auto">
-    <a href="layout_teacher.php?xem=addsv">
-      <p>Tạo mới Sinh Viên </p>
+  <div class="w3-light-gray w3-container w3-quarter left" style="width: 250px; box-shadow: 2px 2px 5px gray; margin: 0 0;">
+    <a href="layout_teacher.php?xem=addsv" id=content>
+      Tạo mới Sinh Viên
     </a>
-    <a href="layout_teacher.php?xem=adddn">
-      <p>Tạo mới Doanh Nghiệp</p>
+    <br>
+    <a href="layout_teacher.php?xem=adddn" id=content>
+      Tạo mới Doanh Nghiệp
     </a>
-    <a href="layout_teacher.php?xem=addgv">
-      <p>Tạo mới Giáo Viên</p>
+    <br>
+    <a href="layout_teacher.php?xem=addgv" id=content>
+      Tạo mới Giáo Viên
     </a>
-    <a href="layout_teacher.php?xem=add_capacity">
-      <p>Thêm Năng lực</p>
+    <br>
+    <a href="layout_teacher.php?xem=add_capacity" id=content>
+      Thêm Năng lực
     </a>
-    <a href="layout_teacher.php?xem=list_request_confirm">
-      <p>Danh sách phiếu xác nhận </p>
+    <br>
+    <a href="layout_teacher.php?xem=list_request_confirm" id=content>
+      Danh sách phiếu xác nhận
     </a>
-    <a href="layout_teacher.php?xem=list_request_unconfimred">
-      <p>Danh sách phiếu chờ </p>
+    <br>
+    <a href="layout_teacher.php?xem=list_request_unconfimred" id=content>
+      Danh sách phiếu chờ
     </a>
-    <a href="layout_teacher.php?xem=list_request_cancel">
-      <p>Danh sách phiếu từ chối </p>
+    <br>
+    <a href="layout_teacher.php?xem=list_request_cancel" id=content>
+      Danh sách phiếu từ chối
     </a>
-    <a href="layout_teacher.php?xem=list_teacher">
-      <p>Danh sách Giáo viên </p>
+    <br>
+    <a href="layout_teacher.php?xem=list_teacher" id=content>
+      Danh sách Giáo viên
     </a>
-    <a href="layout_teacher.php?xem=list_student">
-      <p>Danh sach sinh Viên</p>
+    <br>
+    <a href="layout_teacher.php?xem=list_student" id=content>
+      Danh sach sinh Viên
     </a>
-    <a href="layout_teacher.php?xem=list_enterprise">
-      <p>Danh sách doanh nghiệp</p>
+    <br>
+    <a href="layout_teacher.php?xem=list_enterprise" id=content>
+      Danh sách doanh nghiệp
     </a>
-    <a href="layout_teacher.php?xem=update_pass_teacher">
-      <p>Thay đổi mật khẩu</p>
+    <br>
+    <a href="layout_teacher.php?xem=update_pass_teacher" id=content>
+      Thay đổi mật khẩu
     </a>
+    <br>
   </div>
 
   <div class="w3-container w3-threequarter right">

@@ -16,7 +16,7 @@ move_uploaded_file($hinhanh_tmp,"uploads/".$hinhanh);
 
 
  
-    $sql = "INSERT INTO enterprise_profile(organization_name,employee_count,gross_revenue,address,home_page,tax_number,img,'password') VALUES('$name','$sl','$doanhthu','$address','$home','$code','$hinhanh','$password')";
+    $sql = "INSERT INTO enterprise_profile(organization_name,employee_count,gross_revenue,address,home_page,tax_number,img,password) VALUES('$name','$sl','$doanhthu','$address','$home','$code','$hinhanh','$password')";
     if (mysqli_query($connect, $sql)) {
         echo "New record created successfully";
      //   header('location: ../layout_enterprise.php?xem=chitiet&id='.$id_request);

@@ -15,7 +15,7 @@ echo $status ."</br>";
 echo $create ."</br>";
 echo $student_id;
 
-$sql = "UPDATE `assigned_table` SET `start_date` = '$start_date', `end_date` = '$end_date', `status` = '$status', `create_date` = '$create'  WHERE  `assigned_table`.`organization_request_id` = $request_id AND `assigned_table`.`student_id` = $student_id";
+$sql = "UPDATE `assigned_table` SET `start_date` = '$start_date', `end_date` = '$end_date', `status` = '$status', `create_date` = '$create'  WHERE `assigned_table`.`student_id` = $student_id";
 
 if(mysqli_query($connect,$sql))
 

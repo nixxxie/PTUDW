@@ -6,7 +6,8 @@ $sql_enterprise = mysqli_query($connect, "SELECT * from enterprise_profile ");
 ?>
 <style>
   #chitiet:hover {
-    color: lightblue;
+    color: orangered;
+    transform: scale(1.2)
   }
 </style>
 <h1>Danh sách Doanh Nghiệp </h1>

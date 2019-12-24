@@ -12,7 +12,7 @@ move_uploaded_file($hinhanh_tmp,"uploads/".$hinhanh);
 
 
  
-    $sql = "INSERT INTO student_profile(student_code,name,date_of_birth,join_date,class_name,img,'password') VALUES('$code','$name','$date','$join_date','$class','$hinhanh','$password')";
+    $sql = "INSERT INTO student_profile(student_code,name,date_of_birth,join_date,class_name,img,password) VALUES('$code','$name','$date','$join_date','$class','$hinhanh','$password')";
     if (mysqli_query($connect, $sql)) {
         echo "New record created successfully";
      //   header('location: ../layout_enterprise.php?xem=chitiet&id='.$id_request);

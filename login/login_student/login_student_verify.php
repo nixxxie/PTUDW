@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_SESSION['username'] =$row["name"];
         $id = $row['id'];
         $_SESSION["student_id"]=$id;
-        $sqlSelectStatus = "SELECT status FROM assigned_table WHERE student_id = $id";
+        $sqlSelectStatus = "SELECT status FROM assigned_table WHERE student_id = $id AND status <> 2";
         $resultSatusCode = mysqli_query($connect, $sqlSelectStatus);
         $statusRegister = mysqli_fetch_array($resultSatusCode, MYSQLI_ASSOC);
         if($statusRegister['status'] == '0' || $statusRegister['status'] == '1'|| $statusRegister['status'] == '2'){

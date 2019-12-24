@@ -7,6 +7,7 @@ $sql_student = mysqli_query($connect, "SELECT * from teacher_profile ");
 <style>
   #chitiet:hover {
     color: orangered;
+    transform: scale(1.2)
   }
 </style>
 <h1>Danh sách Giáo Viên </h1>

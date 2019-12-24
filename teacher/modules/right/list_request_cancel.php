@@ -1,3 +1,9 @@
+<style>
+    #click:hover{
+        color: red;
+        transform: scale(1.2);
+    }
+</style>
 <?php
 // list request ----- TA MINH Thao  
 include("../login/config.php");
@@ -28,7 +34,7 @@ $sql=mysqli_query($connect,"SELECT * from enterprise_recruitment_request_form wh
           <p><?php echo  $row['request_name']?></p>
           <p> số lương người cần tuyển: <?php echo $row["amount"];?></p>
           <p>Trạng thái : <?php check_status($row["statuss"]);?></p>
-          <a href="layout_teacher.php?xem=detail_request_cancel&id=<?php echo $row["id"];?>&organization_id=<?php echo $row["organization_id"];?>">XEM CHI TIET</a>
+          <a id="click" href="layout_teacher.php?xem=detail_request_cancel&id=<?php echo $row["id"];?>&organization_id=<?php echo $row["organization_id"];?>">Xem Chi Tiết</a>
     </div>
     <?php 
 }

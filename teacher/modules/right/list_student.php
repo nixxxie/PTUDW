@@ -6,7 +6,8 @@ $sql_student = mysqli_query($connect, "SELECT * from student_profile ");
 ?>
 <style>
   #chitiet:hover {
-    color: orangered
+    color: orangered;
+    transform: scale(1.2)
   }
 </style>
 <h1>Danh sách sinh viên</h1>
